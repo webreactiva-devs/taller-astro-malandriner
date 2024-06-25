@@ -1,0 +1,24 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+---
+
+<BaseLayout>
+  <main class="flex flex-col md:justify-center">
+    <article class="prose prose-lg max-w-[750px] prose-img:mx-auto">
+      <h1 class="title my-2 text-4xl font-bold">
+        Título del proyecto
+      </h1>
+      <br />
+      <!-- {post.badge && <div class="badge badge-secondary my-1">{post.badge}</div>}
+      {
+        post.stack &&
+          post.stack.map((tag) => (
+            <span class="badge badge-outline ml-2 no-underline">{tag}</span>
+          ))
+      } -->
+      <div class="divider my-2"></div>
+      <Content />
+    </article>
+  </main>
+</BaseLayout>

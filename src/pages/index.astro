@@ -8,6 +8,7 @@ const posts = (await getCollection("blog")).sort(
 );
 
 const last_posts = posts.slice(0, 3);
+
 ---
 
 <BaseLayout sideBarActiveItemID="home">
@@ -40,4 +41,9 @@ const last_posts = posts.slice(0, 3);
       </>
     ))
   }
+
+  <div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Mis proyectos</div>
+  </div>
+
 </BaseLayout>
