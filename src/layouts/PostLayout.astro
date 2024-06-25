@@ -3,6 +3,7 @@ import { Image } from "astro:assets";
 import { LOCALE_DATE_FORMAT } from "../config";
 import { type BlogSchema } from "../content/config";
 import BaseLayout from "./BaseLayout.astro";
+import { db, Votes, eq } from "astro:db";
 
 export interface Props extends BlogSchema {}
 
@@ -15,6 +16,15 @@ const {
   badge,
   tags = [],
 } = Astro.props;
+
+const { slug } = Astro.params;
+const postId = slug;
+
+const currentVotes = await db
+  .select()
+  .from(Votes)
+  .where(eq(Votes.postId, postId));
+
 const displayDate = new Date(pubDate).toLocaleDateString(LOCALE_DATE_FORMAT);
 ---
 
@@ -63,7 +73,7 @@ const displayDate = new Date(pubDate).toLocaleDateString(LOCALE_DATE_FORMAT);
         )
       }
       <div class="">
-        <p>Votos: <span id="vote-count">0</span></p>
+        <p>Votos: <span id="vote-count">{currentVotes.length}</span></p>
         <button id="vote-button">👍 Votar</button>
       </div>
       <div class="divider my-2"></div>
@@ -71,3 +81,14 @@ const displayDate = new Date(pubDate).toLocaleDateString(LOCALE_DATE_FORMAT);
     </article>
   </main>
 </BaseLayout>
+
+<script define:vars={{ postId }}>
+  document.getElementById("vote-button").addEventListener("click", async () => {
+    const response = await fetch(`/api/votes/${postId}`, { method: "POST" });
+    if (response.ok) {
+      const data = await response.json();
+      const voteCountElement = document.getElementById("vote-count");
+      voteCountElement.textContent = data.votes;
+    }
+  });
+</script>
