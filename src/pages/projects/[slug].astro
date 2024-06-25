@@ -1,22 +1,40 @@
 ---
+import { type ProjectSchema } from "../../content/config";
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import { CollectionEntry, getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const postEntries = await getCollection("project");
+  return postEntries.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+interface Props {
+  entry: CollectionEntry<"project">;
+}
+
+const { entry } = Astro.props;
+const post: ProjectSchema = entry.data;
+const { Content } = await entry.render();
 
 ---
 
-<BaseLayout>
+<BaseLayout title={post.title} description={post.description} ogType="article">
   <main class="flex flex-col md:justify-center">
     <article class="prose prose-lg max-w-[750px] prose-img:mx-auto">
       <h1 class="title my-2 text-4xl font-bold">
-        Título del proyecto
+        {post.title}
       </h1>
       <br />
-      <!-- {post.badge && <div class="badge badge-secondary my-1">{post.badge}</div>}
+      {post.badge && <div class="badge badge-secondary my-1">{post.badge}</div>}
       {
         post.stack &&
           post.stack.map((tag) => (
             <span class="badge badge-outline ml-2 no-underline">{tag}</span>
           ))
-      } -->
+      }
       <div class="divider my-2"></div>
       <Content />
     </article>

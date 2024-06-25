@@ -1,4 +1,5 @@
 ---
+import ProjectCard from "@components/ProjectCard.astro";
 import { getCollection } from "astro:content";
 import HorizontalCard from "../components/HorizontalCard.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
@@ -9,6 +10,7 @@ const posts = (await getCollection("blog")).sort(
 
 const last_posts = posts.slice(0, 3);
 
+const projects = await getCollection("project");
 ---
 
 <BaseLayout sideBarActiveItemID="home">
@@ -46,4 +48,18 @@ const last_posts = posts.slice(0, 3);
     <div class="text-3xl w-full font-bold mb-5 mt-10">Mis proyectos</div>
   </div>
 
+  {
+    projects.map((project) => (
+      <>
+        <ProjectCard
+          title={project.data.title}
+          desc={project.data.description}
+          url={`projects/${project.slug}`}
+          badge={project.data.badge}
+          stack={project.data.stack}
+        />
+        <div class="divider my-0" />
+      </>
+    ))
+  }
 </BaseLayout>
