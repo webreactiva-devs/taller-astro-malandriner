@@ -10,7 +10,7 @@ import node from "@astrojs/node";
 export default defineConfig({
   site: 'https://astrofy-template.netlify.app',
   integrations: [mdx(), sitemap(), tailwind(), db()],
-  output: "server",
+  output: "hybrid",
   adapter: node({
     mode: "standalone"
   })
