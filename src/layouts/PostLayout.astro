@@ -1,0 +1,69 @@
+---
+import { Image } from "astro:assets";
+import { LOCALE_DATE_FORMAT } from "../config";
+import { type BlogSchema } from "../content/config";
+import BaseLayout from "./BaseLayout.astro";
+
+export interface Props extends BlogSchema {}
+
+const {
+  title,
+  description,
+  pubDate,
+  updatedDate,
+  heroImage,
+  badge,
+  tags = [],
+} = Astro.props;
+const displayDate = new Date(pubDate).toLocaleDateString(LOCALE_DATE_FORMAT);
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  image={heroImage}
+  ogType="article"
+>
+  <main class="md:flex md:justify-center">
+    <article class="prose prose-lg max-w-[750px] prose-img:mx-auto">
+      {
+        heroImage && (
+          <Image
+            width={750}
+            height={422}
+            format="webp"
+            src={heroImage}
+            alt={title}
+            class="w-full mb-6"
+            transition:name={title}
+          />
+        )
+      }
+      <h1 class="title my-2 text-4xl font-bold">{title}</h1>
+      {pubDate && <time>{displayDate}</time>}
+      <br />
+      {badge && <div class="badge badge-secondary my-1">{badge}</div>}
+      {
+        tags &&
+          tags.map((tag) => (
+            <a
+              href={`/blog/tag/${tag}`}
+              class="badge badge-outline ml-2 no-underline"
+            >
+              {tag}
+            </a>
+          ))
+      }
+      {
+        updatedDate && (
+          <div>
+            {" "}
+            Actalizado en <time>{updatedDate}</time>{" "}
+          </div>
+        )
+      }
+      <div class="divider my-2"></div>
+      <slot />
+    </article>
+  </main>
+</BaseLayout>

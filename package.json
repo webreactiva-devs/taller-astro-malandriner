@@ -1,0 +1,29 @@
+{
+  "name": "taller-astro-malandriner",
+  "description": "Taller de Web Reactiva basado en Astrofy",
+  "type": "module",
+  "version": "3.0.0",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^2.0.3",
+    "@astrojs/rss": "^3.0.0",
+    "@astrojs/sitemap": "^3.0.1",
+    "@astrojs/tailwind": "^5.0.3",
+    "astro": "^4.0.2",
+    "daisyui": "^4.4.10",
+    "dayjs": "^1.11.9",
+    "sharp": "^0.32.6",
+    "tailwindcss": "^3.3.5",
+    "@astrojs/check": "^0.7.0",
+    "typescript": "^5.5.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.10"
+  }
+}
