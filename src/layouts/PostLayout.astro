@@ -62,6 +62,10 @@ const displayDate = new Date(pubDate).toLocaleDateString(LOCALE_DATE_FORMAT);
           </div>
         )
       }
+      <div class="">
+        <p>Votos: <span id="vote-count">0</span></p>
+        <button id="vote-button">👍 Votar</button>
+      </div>
       <div class="divider my-2"></div>
       <slot />
     </article>
