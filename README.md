@@ -9,6 +9,11 @@
 - Crear animaciones en las transiciones de carga de página
 - Añadir AstroDB a tu proyecto para tener persistencia de datos en la nube
 
+
+
+https://github.com/webreactiva-devs/taller-astro-malandriner/assets/1122071/5fd6beed-a918-4c55-8715-0af2177a34ce
+
+
 ## Instalación
 
 1. Descarga el repositorio en tu ordenador
