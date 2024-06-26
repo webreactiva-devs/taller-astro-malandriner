@@ -2,7 +2,7 @@
 
 > Taller para aprender características de Astro para la comunidad malandriner de suscriptores de Web Reactiva
 
-## ¿Qué aprenderá en este taller?
+## ¿Qué aprenderás en este taller?
 
 - Algunas piezas básicas del éxito de [Astro](https://astro.build)
 - Generar una nueva colección de contenido en Markdown
@@ -59,3 +59,6 @@ El único `Readme.md` bueno está en esta rama ;)
 ## Referencia principal
 
 - Plantilla basada en [Astrofy](https://github.com/manuelernestog/astrofy) de Manuel Ernesto
+
+![image](https://github.com/webreactiva-devs/taller-astro-malandriner/assets/1122071/7eddfeb8-0dde-44a2-af1d-296ea1e92214)
+
