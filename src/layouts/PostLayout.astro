@@ -4,6 +4,7 @@ import { LOCALE_DATE_FORMAT } from "../config";
 import { type BlogSchema } from "../content/config";
 import BaseLayout from "./BaseLayout.astro";
 import { db, Votes, eq } from "astro:db";
+import VoteButton from "../components/react/VoteButton";
 
 export interface Props extends BlogSchema {}
 
@@ -73,27 +74,14 @@ const displayDate = new Date(pubDate).toLocaleDateString(LOCALE_DATE_FORMAT);
         )
       }
       <div class="text-center my-4">
-        <button
-          id="vote-button"
-          class="flex items-center px-4 py-2 bg-slate-500 text-white font-semibold rounded-lg shadow-md hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-opacity-75 transform transition-transform duration-200 hover:scale-105 active:scale-110"
-        >
-          👍
-          <span id="vote-count" class="ml-2">{currentVotes.length}</span>
-        </button>
+        <VoteButton
+          postId={postId}
+          initialVotes={currentVotes.length}
+          client:load
+        />
       </div>
       <div class="divider my-2"></div>
       <slot />
     </article>
   </main>
 </BaseLayout>
-
-<script define:vars={{ postId }}>
-  document.getElementById("vote-button").addEventListener("click", async () => {
-    const response = await fetch(`/api/votes/${postId}`, { method: "POST" });
-    if (response.ok) {
-      const data = await response.json();
-      const voteCountElement = document.getElementById("vote-count");
-      voteCountElement.textContent = data.votes;
-    }
-  });
-</script>
