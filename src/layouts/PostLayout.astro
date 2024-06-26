@@ -72,9 +72,14 @@ const displayDate = new Date(pubDate).toLocaleDateString(LOCALE_DATE_FORMAT);
           </div>
         )
       }
-      <div class="">
-        <p>Votos: <span id="vote-count">{currentVotes.length}</span></p>
-        <button id="vote-button">👍 Votar</button>
+      <div class="text-center my-4">
+        <button
+          id="vote-button"
+          class="flex items-center px-4 py-2 bg-slate-500 text-white font-semibold rounded-lg shadow-md hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-opacity-75 transform transition-transform duration-200 hover:scale-105 active:scale-110"
+        >
+          👍
+          <span id="vote-count" class="ml-2">{currentVotes.length}</span>
+        </button>
       </div>
       <div class="divider my-2"></div>
       <slot />
