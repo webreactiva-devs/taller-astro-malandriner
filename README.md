@@ -9,6 +9,13 @@
 - Crear animaciones en las transiciones de carga de página
 - Añadir AstroDB a tu proyecto para tener persistencia de datos en la nube
 
+## Instalación
+
+1. Descarga el repositorio en tu ordenador
+2. La versión de Astro que usamos es la 4, la de Node.js tiene que ser v18.17.1 o v20.3.0 o superior ( v19 no está soportada)
+3. Ejecuta `npm install` y `npm run dev`
+4. En el editor de código te recomiendo instalar la [extensión oficial de Astro](https://marketplace.visualstudio.com/items?itemName=astro-build.astro-vscode)
+
 ‎ 
 
 ## ¿Cómo funciona el taller?
