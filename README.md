@@ -60,5 +60,7 @@ El único `Readme.md` bueno está en esta rama ;)
 
 - Plantilla basada en [Astrofy](https://github.com/manuelernestog/astrofy) de Manuel Ernesto
 
-![image](https://github.com/webreactiva-devs/taller-astro-malandriner/assets/1122071/7eddfeb8-0dde-44a2-af1d-296ea1e92214)
+![image (2)](https://github.com/webreactiva-devs/taller-astro-malandriner/assets/1122071/79ec563d-dfa8-46f7-ad72-05c7d2b70089)
+
+
 
