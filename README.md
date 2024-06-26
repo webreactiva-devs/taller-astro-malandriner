@@ -14,6 +14,12 @@
 https://github.com/webreactiva-devs/taller-astro-malandriner/assets/1122071/5fd6beed-a918-4c55-8715-0af2177a34ce
 
 
+## Iniciación a Astro
+
+- Te recomiendo nuestro [minibootcamp para crear un portfolio con Astro](https://www.webreactiva.com/bootcamp/astro)
+- Y la documentación oficial de [Astro](https://docs.astro.build) (disponible en español)
+
+
 ## Instalación
 
 1. Descarga el repositorio en tu ordenador
