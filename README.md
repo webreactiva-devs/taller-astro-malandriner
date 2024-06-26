@@ -1,6 +1,6 @@
 # Taller de Astro Malandriner
 
-> Taller para aprender características de Astro para la comunidad de Web Reactiva
+> Taller para aprender características de Astro para la comunidad malandriner de suscriptores de Web Reactiva
 
 ## ¿Qué aprenderá en este taller?
 
@@ -14,6 +14,8 @@
 ## ¿Cómo funciona el taller?
 
 Arrancamos desdes un proyecto de Astro basado en la plantilla Astrofy con cambios.
+
+Las tres propuestas de aprendizaje están en ramas separadas, con el sufijo `start` para comenzar y el `end` con la solución final.
 
 👉 Explicamos la estructura del proyecto Astro y cómo es un fichero `.astro`
 
@@ -30,11 +32,11 @@ Los proyectos están ya creados en `/src/content/projects`
 
 ‎ 
 
-### Rama `lesson-transition-start`
+### Rama `lesson-transitions-start`
 
 Añadiremos una transcición con animación finísima cuando el usuario navegue por la web, principalmente cuando acceda a las páginas del blog.
 
-👉 La soluciónn está en la rama `lesson-porjects-end`
+👉 La soluciónn está en la rama `lesson-transitions-end`
 
 ‎ 
 
@@ -44,6 +46,14 @@ Añadiremos una funcionalidad de votación en los posts del blog con la posibili
 
 👉 La soluciónn está en la rama `lesson-astrodb-end`
 
+
+### Rama `finish`
+
+Tiene todos los cambios de la funcionalidad
+
+### Rama `main`
+
+El único `Readme.md` bueno está en esta rama ;)
 ‎ 
 
 ## Referencia principal
