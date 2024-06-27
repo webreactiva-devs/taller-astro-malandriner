@@ -23,7 +23,7 @@ https://github.com/webreactiva-devs/taller-astro-malandriner/assets/1122071/5fd6
 ## Instalación
 
 1. Descarga el repositorio en tu ordenador
-2. La versión de Astro que usamos es la 4, la de Node.js tiene que ser v18.17.1 o v20.3.0 o superior ( v19 no está soportada)
+2. La versión de Astro que usamos es la 4, la de Node.js tiene que ser v18.17.1 o v20.3.0 o superior (v19 no está soportada)
 3. Ejecuta `npm install` y `npm run dev`
 4. En el editor de código te recomiendo instalar la [extensión oficial de Astro](https://marketplace.visualstudio.com/items?itemName=astro-build.astro-vscode)
 
@@ -31,7 +31,7 @@ https://github.com/webreactiva-devs/taller-astro-malandriner/assets/1122071/5fd6
 
 ## ¿Cómo funciona el taller?
 
-Arrancamos desdes un proyecto de Astro basado en la plantilla Astrofy con cambios.
+Arrancamos desde un proyecto de Astro basado en la plantilla Astrofy con cambios.
 
 Las tres propuestas de aprendizaje están en ramas separadas, con el sufijo `start` para comenzar y el `end` con la solución final.
 
@@ -46,15 +46,15 @@ Añadiremos una sección de proyectos a la home y como páginas independientes.
 
 Los proyectos están ya creados en `/src/content/projects`
 
-👉 La soluciónn está en la rama `lesson-projects-end`
+👉 La solución está en la rama `lesson-projects-end`
 
 ‎ 
 
 ### Rama `lesson-transitions-start`
 
-Añadiremos una transcición con animación finísima cuando el usuario navegue por la web, principalmente cuando acceda a las páginas del blog.
+Añadiremos una transición con animación finísima cuando el usuario navegue por la web, principalmente cuando acceda a las páginas del blog.
 
-👉 La soluciónn está en la rama `lesson-transitions-end`
+👉 La solución está en la rama `lesson-transitions-end`
 
 ‎ 
 
@@ -62,7 +62,7 @@ Añadiremos una transcición con animación finísima cuando el usuario navegue 
 
 Añadiremos una funcionalidad de votación en los posts del blog con la posibilidad de persistirlos en base de datos usando AstroDB.
 
-👉 La soluciónn está en la rama `lesson-astrodb-end`
+👉 La solución está en la rama `lesson-astrodb-end`
 
 
 ### Rama `finish`
