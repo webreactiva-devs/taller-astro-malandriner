@@ -73,14 +73,26 @@ Añadiremos una funcionalidad de votación en los posts del blog con la posibili
 
 👉 La solución está en la rama `lesson-astrodb-end`
 
+‎ 
+
+
+
 ### Rama `lesson-surprise-react-component`
 
 - [Documentaciçón sobre Astro Islands](https://docs.astro.build/es/concepts/islands/)
 
 
+‎ 
+
+
+
 ### Rama `finish`
 
 Tiene todos los cambios de la funcionalidad
+
+‎ 
+
+
 
 ### Rama `main`
 
