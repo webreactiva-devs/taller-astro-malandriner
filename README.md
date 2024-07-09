@@ -11,6 +11,7 @@
 - Generar una nueva colección de contenido en Markdown
 - Crear animaciones en las transiciones de carga de página
 - Añadir AstroDB a tu proyecto para tener persistencia de datos en la nube
+- Nuestro mayor agradecimiento a Manuel Ernesto por publicar para todos la plantilla [Astrofy](https://github.com/manuelernestog/astrofy) en la que hemos basado el taller 
 
 
 
@@ -99,9 +100,7 @@ Tiene todos los cambios de la funcionalidad
 El único `Readme.md` bueno está en esta rama ;)
 ‎ 
 
-## Referencia principal
 
-- Plantilla basada en [Astrofy](https://github.com/manuelernestog/astrofy) de Manuel Ernesto
 
 [![image](https://github.com/webreactiva-devs/taller-astro-malandriner/assets/1122071/80541a35-40db-4f3c-97b6-998e7abc0ca5)](https://webreactiva.com/newsletter)
 
