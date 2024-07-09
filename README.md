@@ -1,6 +1,8 @@
 # Taller de Astro Malandriner
 
 > Taller para aprender características de Astro para la comunidad malandriner de suscriptores de Web Reactiva
+> [Vídeo del taller](https://www.webreactiva.com/cursos/masterclass/taller-de-astro-colecciones-transciciones-y-astrodb)
+> [Suscríbete para no perderte el siguiente](https://webreactiva.com)
 
 ## ¿Qué aprenderás en este taller?
 
