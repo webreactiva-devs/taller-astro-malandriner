@@ -1,8 +1,9 @@
 # Taller de Astro Malandriner
 
 > Taller para aprender características de Astro para la comunidad malandriner de suscriptores de Web Reactiva
-> [Vídeo del taller](https://www.webreactiva.com/cursos/masterclass/taller-de-astro-colecciones-transciciones-y-astrodb)
+> [Vídeo con la solución del taller](https://www.webreactiva.com/cursos/masterclass/taller-de-astro-colecciones-transciciones-y-astrodb)
 > [Suscríbete para no perderte el siguiente](https://webreactiva.com)
+
 
 ## ¿Qué aprenderás en este taller?
 
@@ -48,6 +49,8 @@ Añadiremos una sección de proyectos a la home y como páginas independientes.
 
 Los proyectos están ya creados en `/src/content/projects`
 
+- [Documentación sobre Collections](https://docs.astro.build/es/guides/content-collections/)
+
 👉 La solución está en la rama `lesson-projects-end`
 
 ‎ 
@@ -55,6 +58,8 @@ Los proyectos están ya creados en `/src/content/projects`
 ### Rama `lesson-transitions-start`
 
 Añadiremos una transición con animación finísima cuando el usuario navegue por la web, principalmente cuando acceda a las páginas del blog.
+
+- [Documentación sobre animaciones y transiciones](https://docs.astro.build/es/tutorials/add-view-transitions/)
 
 👉 La solución está en la rama `lesson-transitions-end`
 
@@ -64,7 +69,13 @@ Añadiremos una transición con animación finísima cuando el usuario navegue p
 
 Añadiremos una funcionalidad de votación en los posts del blog con la posibilidad de persistirlos en base de datos usando AstroDB.
 
+- [Documentación sobre AstroDB](https://docs.astro.build/es/guides/astro-db/)
+
 👉 La solución está en la rama `lesson-astrodb-end`
+
+### Rama `lesson-surprise-react-component`
+
+- [Documentaciçón sobre Astro Islands](https://docs.astro.build/es/concepts/islands/)
 
 
 ### Rama `finish`
@@ -80,7 +91,8 @@ El único `Readme.md` bueno está en esta rama ;)
 
 - Plantilla basada en [Astrofy](https://github.com/manuelernestog/astrofy) de Manuel Ernesto
 
-![image (2)](https://github.com/webreactiva-devs/taller-astro-malandriner/assets/1122071/79ec563d-dfa8-46f7-ad72-05c7d2b70089)
+[![image](https://github.com/webreactiva-devs/taller-astro-malandriner/assets/1122071/80541a35-40db-4f3c-97b6-998e7abc0ca5)](https://webreactiva.com/newsletter)
+
 
 
 
